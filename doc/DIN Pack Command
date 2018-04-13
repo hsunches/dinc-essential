@@ -1,0 +1,26 @@
+========================================================
+DIN PACK README
+========================================================
+DC List
+========================================================
+2g
+3g
+dev (always necessary)
+ethernet
+lte
+voip
+wifi_ap
+wifi_sta
+wmx
+========================================================
+Caution: dev for every product is necessary, don't remove it!!!
+========================================================
+PACK COMMAND:
+./project/tool/export.sh "what dc(s) you wanna remove"
+========================================================
+for example, if you only need lte & ethernet,
+input this command:
+./project/tool/export.sh 2g 3g voip wifi_ap wifi_sta wmx
+
+this will only keep 3 dcs, dev, ethernet, lte
+

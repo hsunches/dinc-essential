@@ -1,0 +1,21 @@
+===========================================================================
+DINC Package README
+===========================================================================
+File/Folder Structure:
+
+  dinc
+   |
+   |----- config [configuration files of DIN Client/DC]
+   |
+   |----- doc [documents of this DINC package]
+   |
+   |----- generic [DIN Client/DC component]
+   |
+   |----- hal [HAL Component]
+   |
+   |----- output [Output folder for DIN Client package]
+   |
+   |----- profile [Profile for your Product]
+   |
+   |----- dins.exe [DIN Server Emulator]
+  

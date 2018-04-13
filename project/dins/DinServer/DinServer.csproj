@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8D8CE898-5B26-415E-A69C-DB407F87752E}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>DinServer</RootNamespace>
+    <AssemblyName>DinServer</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Externalconsole>true</Externalconsole>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Externalconsole>true</Externalconsole>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="OrderAttribute.cs" />
+    <Compile Include="ExplicitSizeAttribute.cs" />
+    <Compile Include="DataDeserializer.cs" />
+    <Compile Include="PacketElementDecoder.cs" />
+    <Compile Include="PacketElementDecoderAttribute.cs" />
+    <Compile Include="NetworkInterfaceDecoder.cs" />
+    <Compile Include="DinPacket.cs" />
+    <Compile Include="NetworkInterface.cs" />
+    <Compile Include="ExtendedNetworkInterface.cs" />
+    <Compile Include="LteIpChangePacket.cs" />
+    <Compile Include="ThreeGIpChangePacket.cs" />
+    <Compile Include="TwoGIpChangePacket.cs" />
+    <Compile Include="WimaxIpChangePacket.cs" />
+    <Compile Include="NormalNetworkInterface.cs" />
+    <Compile Include="LteNeighboringCell.cs" />
+    <Compile Include="TwoGNeighboringCell.cs" />
+    <Compile Include="ThreeGNeighboringCell.cs" />
+    <Compile Include="WimaxNeighboringCell.cs" />
+    <Compile Include="LteHandoverPacket.cs" />
+    <Compile Include="TwoGHandoverPacket.cs" />
+    <Compile Include="ThreeGHandoverPacket.cs" />
+    <Compile Include="WimaxHandoverPacket.cs" />
+    <Compile Include="LteSignalQualityParameters.cs" />
+    <Compile Include="WimaxSignalQualityParameters.cs" />
+    <Compile Include="TwoGSignalQualityParameters.cs" />
+    <Compile Include="ThreeGSignalQualityParameters.cs" />
+    <Compile Include="SignalQualityParameters.cs" />
+    <Compile Include="LteConnectionHistory.cs" />
+    <Compile Include="ConnectionHistory.cs" />
+    <Compile Include="WimaxConnectionHistory.cs" />
+    <Compile Include="TwoGConnectionHistory.cs" />
+    <Compile Include="ThreeGConnectionHistory.cs" />
+    <Compile Include="ConnectionHistoryDecoder.cs" />
+    <Compile Include="DincConnectionHistoryPacket.cs" />
+    <Compile Include="DevicePacket.cs" />
+    <Compile Include="LteDevicePacket.cs" />
+    <Compile Include="LteNetworkEntryPacket.cs" />
+    <Compile Include="LtePerformancePacket.cs" />
+    <Compile Include="CellGlobalId.cs" />
+    <Compile Include="LteAlertPacket.cs" />
+    <Compile Include="TwoGDevicePacket.cs" />
+    <Compile Include="TwoGNetworkEntryPacket.cs" />
+    <Compile Include="ThreeGNetworkEntryPacket.cs" />
+    <Compile Include="WimaxNetworkEntryPacket.cs" />
+    <Compile Include="TwoGAlertPacket.cs" />
+    <Compile Include="AlertPacket.cs" />
+    <Compile Include="ThreeGAlertPacket.cs" />
+    <Compile Include="WimaxAlertPacket.cs" />
+    <Compile Include="IpChangePacket.cs" />
+    <Compile Include="TwoGPerformancePacket.cs" />
+    <Compile Include="ThreeGPerformancePacket.cs" />
+    <Compile Include="HandoverStatistics.cs" />
+    <Compile Include="PacketStatistics.cs" />
+    <Compile Include="FrameStatistics.cs" />
+    <Compile Include="RssiStatistics.cs" />
+    <Compile Include="RsrpStatistics.cs" />
+    <Compile Include="RsrqStatistics.cs" />
+    <Compile Include="RscpStatistics.cs" />
+    <Compile Include="RxqualStatistics.cs" />
+    <Compile Include="CinrR3Statistics.cs" />
+    <Compile Include="CinrR1Statistics.cs" />
+    <Compile Include="CqiStatistics.cs" />
+    <Compile Include="UplinkModulationStatistics.cs" />
+    <Compile Include="DownlinkModulationStatistics.cs" />
+    <Compile Include="DeviceStatus.cs" />
+    <Compile Include="TwoGUplinkModulationStatistics.cs" />
+    <Compile Include="TwoGDownlinkModulationStatistics.cs" />
+    <Compile Include="WimaxPerformancePacket.cs" />
+    <Compile Include="ThreeGDevicePacket.cs" />
+    <Compile Include="WimaxDevicePacket.cs" />
+    <Compile Include="WifiApDevicePacket.cs" />
+    <Compile Include="SsidConfiguration.cs" />
+    <Compile Include="WifiApPerformancePacket.cs" />
+    <Compile Include="WifiClient.cs" />
+    <Compile Include="VoipDevicePacket.cs" />
+    <Compile Include="VoipPerformancePacket.cs" />
+    <Compile Include="TxJitterStatistics.cs" />
+    <Compile Include="RxJitterStatistics.cs" />
+    <Compile Include="VoipCallPacket.cs" />
+    <Compile Include="WifiStationConnectionHistory.cs" />
+    <Compile Include="WifiSignalQualityParameters.cs" />
+    <Compile Include="WifiStationDevicePacket.cs" />
+    <Compile Include="WifiNeighboringAp.cs" />
+    <Compile Include="WifiStationNetworkEntryPacket.cs" />
+    <Compile Include="WifiStationAlertPacket.cs" />
+    <Compile Include="WifiStationPerformancePacket.cs" />
+    <Compile Include="EthernetPerformancePacket.cs" />
+    <Compile Include="EthernetPortStatistics.cs" />
+    <Compile Include="PacketIdAttribute.cs" />
+    <Compile Include="MsbSizeAttribute.cs" />
+    <Compile Include="DownlinkThroughputStatistics.cs" />
+    <Compile Include="UplinkThroughputStatistics.cs" />
+    <Compile Include="LanDownlinkThroughputStatistics.cs" />
+    <Compile Include="LanUplinkThroughputStatistics.cs" />
+    <Compile Include="LteCellGlobalId.cs" />
+    <Compile Include="ExternalCmdAck.cs" />
+    <Compile Include="DincDevInfoUpdate.cs" />
+    <Compile Include="DincDcTerminationPacket.cs" />
+    <Compile Include="SubCarrierInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
